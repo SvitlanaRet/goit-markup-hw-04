@@ -110,6 +110,15 @@ header {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
 }
 .title {
     color: var(--third-text-color);
@@ -214,6 +223,7 @@ img {
     background-color: var(--third-text-color);
     list-style-type: none;
     width: 270px;
+    width: calc((100% - 90px) / 4);
 }
 .team-container {
     display: flex;
@@ -242,6 +252,35 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0;
+    padding-bottom: 16px;
+}
+.container-soc-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0;
+}
+.list-soc-link {
+    list-style-type: none;
+}
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #188ce8;
+    display: block;
+}
+
+/* Постійні клієнти */
+.clients {
+    display: flex;
+    
+}
+.list-clients {
+    list-style-type: none;
+}
+.list-clients {
+    display: block;
 }
 
 /* Підвал */
@@ -360,6 +399,7 @@ button {
 }
 .projects {
     list-style-type: none;
+    width: calc((100% - 60px) / 3);
 }
 .projects-text {
     padding: 20px 24px;
