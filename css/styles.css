@@ -5,8 +5,8 @@
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196f3;
     --black-color: #000000;
-    --icons-color: #AFB1B8;
-    --features-color: #F5F4FA;
+    --icons-color: #afb1b8;
+    --features-color: #f5f4fa;
 }
 .outline {
     outline: 1px solid red;
@@ -63,6 +63,9 @@ header {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 .header-list {
     list-style-type: none;
@@ -70,15 +73,12 @@ header {
 .header-list + .header-list {
     margin-left: 50px;
 }
-.list-nav {
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
+
 .list-nav:hover,
 .list-nav:focus {
     color: var(--accent-color);
 }
-.list-nav.current {
+.list-nav .current {
     color: var(--accent-color);
 }
 
@@ -86,8 +86,8 @@ header {
     display: flex;
     margin-left: auto;
 }
+
 .header-contacts {
-    color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -97,10 +97,17 @@ header {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text-color);
 }
 .header-contacts:hover,
 .header-contacts:focus {
     color: var(--accent-color);
+}
+.header-items {
+    margin-right: 10px;
+    fill: currentColor;
 }
 .header-contacts + .header-contacts {
     margin-right: 50px;
@@ -164,7 +171,6 @@ header {
 }
 .container-features {
     display: flex;
-    
 }
 
 .features {
@@ -237,8 +243,9 @@ img {
     list-style-type: none;
     width: 270px;
     width: calc((100% - 90px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-container {
     display: flex;
@@ -274,7 +281,6 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     gap: 10px;
     padding-left: 0;
-    
 }
 .list-soc-link {
     list-style-type: none;
@@ -288,10 +294,9 @@ border-radius: 0px 0px 4px 4px;
     align-items: center;
     justify-content: center;
     color: var(--icons-color);
-    
 }
 .team-soc-link:hover,
-.team-soc-link:focus  {
+.team-soc-link:focus {
     background-color: var(--accent-color);
     color: var(--third-text-color);
 }
@@ -302,13 +307,32 @@ border-radius: 0px 0px 4px 4px;
 /* Постійні клієнти */
 .clients {
     display: flex;
-    
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .list-clients {
     list-style-type: none;
 }
-.list-clients {
-    display: block;
+
+.logo-clients {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    border-radius: 4px;
+    color: var(--icons-color);
+    align-items: center;
+    justify-content: center;
+}
+.logo-clients:hover,
+.logo-clients:focus {
+    color: var(--accent-color);
+}
+.logo-clients-item {
+    fill: currentColor;
 }
 
 /* Підвал */
@@ -407,6 +431,8 @@ button {
 .bg-filtres:focus {
     background-color: var(--accent-color);
     color: var(--third-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .text-filtres {
     color: var(--primary-text-color);
@@ -428,6 +454,11 @@ button {
 .projects {
     list-style-type: none;
     width: calc((100% - 60px) / 3);
+}
+.projects:hover,
+.projects:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-text {
     padding: 20px 24px;
