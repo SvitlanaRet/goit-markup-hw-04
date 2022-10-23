@@ -341,6 +341,10 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-general-container {
+    display: flex;
+    align-items: baseline;
+}
 
 .logo-footer {
     color: var(--black-color);
@@ -359,6 +363,9 @@ img {
 }
 address {
     margin-top: 20px;
+}
+.adress-container {
+    display: block;
 }
 .footer-container {
     padding-left: 0;
@@ -393,6 +400,44 @@ address {
 .list-footer:not(:first-child) {
     margin-top: 9px;
 }
+.connect-container {
+    margin-left: 70px;
+}
+.container-connect-item {
+    display: flex;
+    padding-left: 0;
+    gap: 10px;
+}
+.connect-caption {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.connect-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--third-text-color);
+}
+.connect-link:hover,
+.connect-link:focus {
+    background-color: var(--accent-color);
+}
+.connect-item {
+    fill: currentColor;
+}
+
 /* Finish Studio page */
 
 /* Start Portfolio page */
