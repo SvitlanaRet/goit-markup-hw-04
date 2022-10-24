@@ -78,9 +78,10 @@ header {
 .list-nav:focus {
     color: var(--accent-color);
 }
-.list-nav .current {
+.list-nav.current {
     color: var(--accent-color);
 }
+
 
 .container-contacts {
     display: flex;
@@ -276,7 +277,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 .container-soc-link {
     display: flex;
