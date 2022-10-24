@@ -94,7 +94,7 @@ header {
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     align-items: center;
@@ -115,7 +115,9 @@ header {
 
 /* Герой */
 .hero {
-    background-color: #2f303a;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #c4c4c4;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -127,7 +129,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    flex-grow: 1;
 }
 .title {
     color: var(--third-text-color);
@@ -154,6 +155,7 @@ header {
     padding: 10px 32px;
     text-align: center;
     margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button:hover,
 .button:focus {
@@ -500,8 +502,11 @@ button {
     list-style-type: none;
     width: calc((100% - 60px) / 3);
 }
-.projects:hover,
-.projects:focus {
+.projects-link {
+    display: block;
+}
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
